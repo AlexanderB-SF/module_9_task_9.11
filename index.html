@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-6 offset-md-3">
+            <div class="card text-center pos-midlle">
+                <div class="card-header">
+                    <p class="m-0">Окно результатов генерации</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="cont-fio">
+                                <span>Фамилия</span><span id="surnameOutput">Генерация фамилии</span>
+                                <span>Имя</span><span id="firstNameOutput">Генерация имени</span>
+                                <span>Отчество</span><span id="patronymicOutput">Генерация отчества</span>
+                            </div>
+                            <div class="cont-oth">
+                                <p>
+                                    Пол: <span id="genderOutput">Генерация пола</span>
+                                    <span>, </span>
+                                    Дата рождения: <span id="birthYearOutput">Генерация года рождения</span>
+                                </p>
+                                <h6>Профессия: <span id="professionOutput">Генерация Профессии</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-info btn-gen">сгенерировать</button>
+                    <button class="btn btn-info btn-reset">очистить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
